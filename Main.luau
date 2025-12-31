@@ -2760,7 +2760,7 @@ Module.GameBreakingFeatures:InitiateNoEvilnessLimit()
 Tab_13:CreateSection("Two Man LMS")
 Tab_13:CreateLabel("WARNING! This only works if you are civilian. Use when there is someone else and you left.")
 Tab_13:CreateButton({Name = "Enable Two Man LMS"; Callback = function()
-if game:GetService("Workspace"):WaitForChild("GameAssets"):WaitForChild("Teams"):WaitForChild("Survivor"):FindFirstChild(game.Players.LocalPlayer.Name) and #game:GetService("Workspace"):WaitForChild("GameAssets"):WaitForChild("Teams"):WaitForChild("Survivor"):GetChildren() == 2 then
+if game:GetService("Workspace"):WaitForChild("GameAssets"):WaitForChild("Teams"):WaitForChild("Survivor"):FindFirstChild(game.Players.LocalPlayer.Name) and #game:GetService("Workspace"):WaitForChild("GameAssets"):WaitForChild("Teams"):WaitForChild("Survivor"):GetChildren() == 5 then
 Module.GameBreakingFeatures:InitiateLMS()
 end
 end; })
